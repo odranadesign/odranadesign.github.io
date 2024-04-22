@@ -1,0 +1,194 @@
+:root {
+  --bg-purple-1: #d7b6d5;
+  --bg-purple-2: #8a588d;
+  --bg-purple-3: #ffdcf6;
+  --color-white: #fff;
+}
+
+body {
+  background-color: var(--bg-purple-3);
+}
+/* navbar*/
+.bg-purple {
+  background: var(--bg-purple-1);
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar-brand img,
+footer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(247, 232, 246, 0.75);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(247, 232, 246, 0.75);
+  box-shadow: 0px 0px 5px 2px rgba(247, 232, 246, 0.75);
+}
+.navbar-brand span {
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: var(--color-white);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.navbar-expand-lg .navbar-nav {
+  width: 100%;
+  justify-content: end;
+  font-size: 1.5rem;
+}
+a .socia-media {
+  width: 32px;
+  height: 32px;
+}
+/* navbar*/
+
+/* nav-platforms */
+.nav-platforms {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.nav-platforms .card-platform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 150px;
+  box-shadow: 5px 5px 2px 0px rgba(184, 148, 181, 0.75);
+  border-radius: 10px;
+  position: relative;
+}
+.nav-platforms .card-platform img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  object-fit: cover;
+  z-index: -1;
+}
+.nav-platforms .card-platform p {
+  width: 100%;
+  text-align: center;
+  border: 1px solid var(--bg-purple-1);
+  background-color: rgba(253, 206, 250, 0.75);
+  font-weight: bolder;
+  color: var(--bg-purple-2);
+}
+.nav-platforms .card-platform:hover p {
+  background-color: rgba(138, 88, 141, 0.75);
+  color: var(--color-white);
+}
+/* nav-platforms */
+
+/* products-container */
+.products-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.products-container a {
+  text-decoration: none;
+}
+.products-container .product-card {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 2px 0px rgba(184, 148, 181, 0.75);
+  border-radius: 10px;
+  overflow: hidden;
+  transition-duration: 2s;
+}
+.products-container .product-card:hover {
+  align-items: end;
+}
+.products-container .product-card img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: -1;
+}
+.products-container .product-card:hover img {
+  width: 120%;
+  height: 120%;
+}
+.products-container .product-card p {
+  width: 100%;
+  text-align: center;
+  border: 1px solid var(--bg-purple-1);
+  background-color: rgba(253, 206, 250, 0.75);
+  font-weight: bolder;
+  color: var(--bg-purple-2);
+  font-size: 1rem;
+}
+.products-container .product-card:hover p {
+  background-color: rgba(138, 88, 141, 0.75);
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+/* nav-platforms */
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.page-item {
+  margin-right: 15px;
+}
+.page-item .page-link {
+  width: 100%;
+  background: var(--bg-purple-1);
+  border-radius: 50%;
+  color: var(--color-white);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(146, 137, 145, 0.75);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(146, 137, 145, 0.75);
+  box-shadow: 0px 0px 5px 2px rgba(146, 137, 145, 0.75);
+}
+.page-item .page-link.active {
+  background: var(--bg-purple-2);
+  color: var(--color-white);
+  border: none;
+}
+/* Pagination */
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+}
+footer .social-media .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+footer .social-media .navbar-nav a img {
+  width: 30px;
+  height: 30px;
+  box-shadow: none;
+  border-radius: 0;
+}
+footer p {
+  font-size: 1.5rem;
+  color: var(--color-white);
+}
+/* footer */
