@@ -192,3 +192,31 @@ footer p {
   color: var(--color-white);
 }
 /* footer */
+
+@media only screen and (max-width: 576px) {
+  /* nav-plataform */
+  .nav-platforms {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-platforms .card-platform {
+    width: 100%;
+  }
+  /* nav-plataform */
+
+  /* product-card */
+  .products-container {
+    padding: 0;
+  }
+  .products-container .product-card {
+    width: 150px;
+    height: 150px;
+  }
+  /* product-card */
+
+  /* footer */
+  footer p {
+    font-size: 1rem;
+  }
+  /* footer */
+}
