@@ -193,7 +193,28 @@ footer p {
 }
 /* footer */
 
-@media only screen and (max-width: 576px) {
+
+@media only screen and (min-width: 250px) and (max-width: 320px) {
+  /* nav-plataform */
+  .nav-platforms {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-platforms .card-platform {
+    width: 100%;
+  }
+  /* nav-plataform */
+  .products-container .product-card {
+    width: 135px;
+    height: 135px;
+  }
+   /* footer */
+   footer p {
+    font-size: 1rem;
+  }
+  /* footer */
+}
+@media only screen and (min-width:321px) and (max-width: 576px) {
   /* nav-plataform */
   .nav-platforms {
     flex-direction: column;
