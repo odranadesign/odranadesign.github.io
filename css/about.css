@@ -1,0 +1,119 @@
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.about-us .description {
+  /* border-left: 1px solid var(--bg-purple-1);
+    border-top: 1px solid var(--bg-purple-1); */
+  box-shadow: 5px 5px 5px 0px rgba(170, 108, 157, 0.75);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--bg-purple-2);
+  text-align: justify;
+}
+.about-us .description h2 {
+  color: var(--bg-purple-2);
+  font-weight: bold;
+}
+.about-us .about-us-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.about-us .about-us-img img {
+  width: 350px;
+  height: 350px;
+  border-left: 1px solid var(--bg-purple-1);
+  border-top: 1px solid var(--bg-purple-1);
+  border-radius: 50% 50px;
+  box-shadow: 5px 5px 5px 0px rgba(170, 108, 157, 0.75);
+  object-fit: cover;
+}
+
+/* vision */
+.vision {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.vision .description {
+  /* border-left: 1px solid var(--bg-purple-1);
+    border-top: 1px solid var(--bg-purple-1); */
+  box-shadow: 5px 5px 5px 0px rgba(170, 108, 157, 0.75);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--bg-purple-2);
+  text-align: justify;
+}
+.vision .description h2 {
+  color: var(--bg-purple-2);
+  font-weight: bold;
+  text-align: end;
+}
+.vision .about-us-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.vision .about-us-img img {
+  width: 350px;
+  height: 350px;
+  border-right: 1px solid var(--bg-purple-1);
+  border-top: 1px solid var(--bg-purple-1);
+  border-radius: 50px 50%;
+  box-shadow: -5px 5px 2px 0px rgba(170, 108, 157, 0.75);
+  object-fit: cover;
+}
+
+/* vision */
+
+@media only screen and (min-width: 250px) and (max-width: 320px) {
+  .about-us,
+  .vision {
+    flex-direction: column;
+  }
+  .about-us .about-us-img img,
+  .vision .about-us-img img {
+    width: 280px;
+    height: 280px;
+  }
+  .about-us .description,
+  .vision .description {
+    border-left: 1px solid var(--bg-purple-1);
+    border-top: 1px solid var(--bg-purple-1);
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+  /* nav-plataform */
+  .nav-platforms {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-platforms .card-platform {
+    width: 100%;
+  }
+  /* nav-plataform */
+
+  /* product-card */
+  .products-container {
+    padding: 0;
+  }
+  .products-container .product-card {
+    width: 150px;
+    height: 150px;
+  }
+  /* product-card */
+
+  /* footer */
+  footer p {
+    font-size: 1rem;
+  }
+  /* footer */
+}

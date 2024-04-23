@@ -48,6 +48,19 @@ a .socia-media {
 }
 /* navbar*/
 
+/* Hero */
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: var(--bg-purple-2);
+  border-radius: 50%;
+}
+.carousel-control-next:hover .carousel-control-next-icon, .carousel-control-prev:hover .carousel-control-prev-icon {
+  background-color: var(--bg-purple-1);
+}
+.carousel-indicators [data-bs-target] {
+  background-color: var(--bg-purple-2);
+}
+/* Hero */
+
 /* nav-platforms */
 .nav-platforms {
   display: flex;
@@ -194,7 +207,6 @@ footer p {
   color: var(--color-white);
 }
 /* footer */
-
 
 @media only screen and (min-width: 250px) and (max-width: 320px) {
   /* nav-plataform */
