@@ -5,8 +5,7 @@
   padding: 20px;
 }
 .about-us .description {
-  /* border-left: 1px solid var(--bg-purple-1);
-    border-top: 1px solid var(--bg-purple-1); */
+  max-width: 1024px;
   box-shadow: 5px 5px 5px 0px rgba(170, 108, 157, 0.75);
   padding: 10px;
   border-radius: 10px;
@@ -43,8 +42,7 @@
 }
 
 .vision .description {
-  /* border-left: 1px solid var(--bg-purple-1);
-    border-top: 1px solid var(--bg-purple-1); */
+  max-width: 1024px;
   box-shadow: 5px 5px 5px 0px rgba(170, 108, 157, 0.75);
   padding: 10px;
   border-radius: 10px;
@@ -74,7 +72,7 @@
 
 /* vision */
 
-@media only screen and (min-width: 250px) and (max-width: 320px) {
+@media only screen and (min-width: 250px) and (max-width: 860px) {
   .about-us,
   .vision {
     flex-direction: column;
@@ -89,31 +87,4 @@
     border-left: 1px solid var(--bg-purple-1);
     border-top: 1px solid var(--bg-purple-1);
   }
-}
-@media only screen and (min-width: 321px) and (max-width: 576px) {
-  /* nav-plataform */
-  .nav-platforms {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .nav-platforms .card-platform {
-    width: 100%;
-  }
-  /* nav-plataform */
-
-  /* product-card */
-  .products-container {
-    padding: 0;
-  }
-  .products-container .product-card {
-    width: 150px;
-    height: 150px;
-  }
-  /* product-card */
-
-  /* footer */
-  footer p {
-    font-size: 1rem;
-  }
-  /* footer */
 }
